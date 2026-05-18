@@ -1,4 +1,5 @@
 const { publicIpv4 } = require("public-ip");
+require("dotenv").config();
 
 const crypto = require("crypto");
 const fs = require("fs");

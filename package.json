@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "crypto": "^1.0.1",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "public-ip": "^8.0.0"
   }
