@@ -25,7 +25,7 @@ const saveIp = (clientId, data) => {
   const changesFile = path.join(clientDir, "changes.txt");
 
   // Append change entry
-  if (fs.readFileSync(ipFile) != data.ip) {
+  if (!fs.existsSync(ipFile) || fs.readFileSync(ipFile) != data.ip) {
     const logEntry = JSON.stringify(data) + "\n";
     fs.appendFileSync(changesFile, logEntry, "utf8");
   }
